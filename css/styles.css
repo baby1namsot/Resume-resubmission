@@ -17,6 +17,13 @@ body {
 
 /* HOME
 ------------------------------------*/
+.home {
+    background-image: url("../images/bg-home-office-studio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
 
 
 /* RESUME
