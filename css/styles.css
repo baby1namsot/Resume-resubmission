@@ -190,6 +190,46 @@ img {
 /* Profile
 ------------------------------------*/
 
+/* PROJECTS
+------------------------------------*/
+.projects::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.project-item {
+    float: left;
+    position: relative;
+    width: calc(50% - 15px);
+    margin: 0 30px 30px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.project-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.project-item:nth-child(2n + 1) {
+    clear: left;
+}
+
+.project-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    color: #3c8453;
+    font-size: 22px;
+}
+
+
 
 /* Projects
 ------------------------------------*/
