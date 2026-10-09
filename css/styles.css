@@ -78,12 +78,49 @@ img {
 /* HOME
 ------------------------------------*/
 .home {
-    background-image: url("../images/bg-home-office-studio.jpg");
+    background-color: #4c408b;
+}
+
+.home-wrapper {
+    width: 100%;
+}
+
+.home-header {
+    background-image:
+        linear-gradient(
+            rgba(76, 64, 139, 0.35),
+            rgba(76, 64, 139, 0.35)
+        ),
+        url("../images/bg-home-office-studio.jpg");
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 700px;
+    padding: 10px 0;
 }
+
+.home-header .content-wrapper {
+    max-width: none;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.home h1 {
+    color: white;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.home-header h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+
+
 
 
 /* RESUME
