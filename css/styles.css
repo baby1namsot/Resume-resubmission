@@ -75,8 +75,9 @@ img {
 }
 
 
-/* HOME
+/* HOME PAGE
 ------------------------------------*/
+
 .home {
     background-color: #4c408b;
 }
@@ -88,14 +89,14 @@ img {
 .home-header {
     background-image:
         linear-gradient(
-            rgba(76, 64, 139, 0.35),
-            rgba(76, 64, 139, 0.35)
+            rgba(76, 64, 139, 0.12),
+            rgba(76, 64, 139, 0.12)
         ),
         url("../images/bg-home-office-studio.jpg");
 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     min-height: 700px;
     padding: 10px 0;
 }
@@ -119,15 +120,76 @@ img {
     margin-bottom: 0;
 }
 
-
-
-
-
-/* RESUME
+/* ABOUT ME
 ------------------------------------*/
+.home main {
+    background-color: #4c408b;
+    color: white;
+    max-width: none;
+    width: 100%;
+    padding: 45px 20px;
+}
+
+.about-me {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-me h2 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.about-me p {
+    margin-bottom: 15px;
+}
+
+
+/* RESUME HEADER
+------------------------------------*/
+.resume {
+    background-color: #f6f6f6;
+}
+
+.resume-header {
+    background-color: #bcaa96;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.resume-header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.resume-header h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.resume main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* RESUME SECTIONS
+------------------------------------*/
+.resume-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d3d4d6;
+}
+
+.resume-section h2 {
+    color: #3c8453;
+    font-size: 30px;
+}
+
 
 /* Profile
 ------------------------------------*/
+
 
 /* Projects
 ------------------------------------*/
