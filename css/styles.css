@@ -231,11 +231,20 @@ img {
 
 
 
-/* Projects
+/* WORK EXPERIENCE
 ------------------------------------*/
+.job {
+    margin-bottom: 30px;
+}
 
-/* Work Experience
-------------------------------------*/
+.job h3 {
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #555555;
+    font-style: italic;
+}
 
 /* Education
 ------------------------------------*/
