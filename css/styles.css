@@ -63,6 +63,16 @@ img {
     margin: 0 auto;
 }
 
+/* BUTTONS
+------------------------------------*/
+.btn {
+    display: inline-block;
+    background-color: #3c8453;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
 
 /* HOME
