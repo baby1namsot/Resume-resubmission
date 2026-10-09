@@ -75,9 +75,10 @@ img {
 }
 
 
+
+
 /* HOME PAGE
 ------------------------------------*/
-
 .home {
     background-color: #4c408b;
 }
@@ -90,34 +91,35 @@ img {
     background-image:
         linear-gradient(
             rgba(76, 64, 139, 0.12),
-            rgba(76, 64, 139, 0.12)
+             rgba(76, 64, 139, 0.12)
         ),
         url("../images/bg-home-office-studio.jpg");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 700px;
+    min-height: 580px;
     padding: 10px 0;
 }
 
 .home-header .content-wrapper {
-    max-width: none;
     width: 100%;
-    padding: 0 10px;
+    max-width: none;
+    padding: 0 5px;
 }
 
-.home h1 {
+.home-header h1 {
     color: white;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.2;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .home-header h2 {
     color: white;
     font-size: 22px;
-    margin-bottom: 0;
+    line-height: 1.2;
+    margin: 0;
 }
 
 /* ABOUT ME
@@ -125,8 +127,8 @@ img {
 .home main {
     background-color: #4c408b;
     color: white;
-    max-width: none;
     width: 100%;
+    max-width: none;
     padding: 45px 20px;
 }
 
@@ -142,9 +144,19 @@ img {
 }
 
 .about-me p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 15px;
 }
 
+.about-me a {
+    color: white;
+}
+
+.about-me a:hover {
+    color: #d3d4d6;
+}
 
 /* RESUME HEADER
 ------------------------------------*/
@@ -279,5 +291,35 @@ footer a {
 footer a:hover {
     color: white;
     text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN
+------------------------------------*/
+@media screen and (max-width: 600px) {
+    .home-header {
+        min-height: 500px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .home-header h2 {
+        font-size: 19px;
+    }
+
+    .home main {
+        padding: 30px 20px;
+    }
+
+    .resume-header h1 {
+        font-size: 36px;
+    }
+
+    .project-item {
+        float: none;
+        width: 100%;
+        margin: 0 0 25px;
+    }
 }
 
