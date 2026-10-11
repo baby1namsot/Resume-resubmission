@@ -293,10 +293,10 @@ footer a:hover {
 
 /* RESPONSIVE DESIGN
 ------------------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
     .home-header {
-        min-height: 500px;
-    }
+    min-block-size: 31.25rem;
+}
 
     .home h1 {
     font-size: 1.875rem;
