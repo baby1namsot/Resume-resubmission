@@ -25,9 +25,10 @@ body {
     background-color: #f6f6f6;
     color: #222222;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
+
 h1,
 h2,
 h3 {
@@ -35,14 +36,15 @@ h3 {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 3rem;
 }
+
 h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 a {
@@ -107,17 +109,16 @@ img {
     max-width: none;
     padding: 0 5px;
 }
-
 .home-header h1 {
     color: white;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 1.2;
     margin: 0;
 }
 
 .home-header h2 {
     color: white;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 1.2;
     margin: 0;
 }
@@ -139,13 +140,13 @@ img {
 
 .about-me h2 {
     color: white;
-    font-size: 26px;
+    font-size: 1.625rem;
     margin-bottom: 15px;
 }
 
 .about-me p {
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 15px;
 }
@@ -171,12 +172,12 @@ img {
 }
 
 .resume-header h1 {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
 .resume-header h2 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     margin-bottom: 25px;
 }
 
@@ -195,9 +196,8 @@ img {
 
 .resume-section h2 {
     color: #3c8453;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
-
 
 
 /* PROJECTS
@@ -236,9 +236,8 @@ img {
 
 .project-item h3 {
     color: #3c8453;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
-
 
 
 /* WORK EXPERIENCE
@@ -299,21 +298,21 @@ footer a:hover {
     }
 
     .home h1 {
-        font-size: 30px;
-    }
+    font-size: 1.875rem;
+}
 
-    .home-header h2 {
-        font-size: 19px;
-    }
+.home-header h2 {
+    font-size: 1.1875rem;
+}
 
     .home main {
-        padding: 30px 20px;
-    }
+    padding-block: 1.875rem;
+    padding-inline: 1.25rem;
+}
 
     .resume-header h1 {
-        font-size: 36px;
-    }
-
+    font-size: 2.25rem;
+}
     .project-item {
         float: none;
         width: 100%;
