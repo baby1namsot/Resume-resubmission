@@ -272,7 +272,8 @@ footer {
     background-color: #222222;
     color: white;
     text-align: center;
-    padding: 25px 20px;
+    padding-block: 1.5625rem;
+    padding-inline: 1.25rem;
     clear: both;
 }
 
@@ -347,11 +348,18 @@ footer a:hover {
 footer ul {
     list-style: none;
     padding: 0;
-    margin: 15px 0 0;
+    margin-block: 0;
+    margin-block-start: 0.9375rem;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 footer li {
-    display: inline-block;
+    display: block;
 }
 
 footer li img {
