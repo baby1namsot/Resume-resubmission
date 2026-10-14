@@ -1,12 +1,25 @@
-/*
-COLOR PALETTE
 
-Dark green    #3c8453
-Sandy beige   #bcaa96
-Dark gray     #222222
-Light gray    #d3d4d6
-Off-white     #f6f6f6
-*/
+/* COLOUR AND FONT VARIABLES */
+:root {
+    --neutral-base: oklch(50% 0.015 260);
+
+    --neutral-1: oklch(from var(--neutral-base) 98% c h);
+    --neutral-2: oklch(from var(--neutral-base) 94% c h);
+    --neutral-3: oklch(from var(--neutral-base) 85% c h);
+    --neutral-4: oklch(from var(--neutral-base) 72% c h);
+    --neutral-5: oklch(from var(--neutral-base) 60% c h);
+    --neutral-6: oklch(from var(--neutral-base) 48% c h);
+    --neutral-7: oklch(from var(--neutral-base) 36% c h);
+    --neutral-8: oklch(from var(--neutral-base) 24% c h);
+    --neutral-9: oklch(from var(--neutral-base) 15% c h);
+
+    --color-primary: oklch(55% 0.12 155);
+    --color-secondary: oklch(77% 0.04 65);
+
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-heading: Georgia, "Times New Roman", serif;
+}
+
 
 /* GLOBAL STYLES 
 ------------------------------------*/
