@@ -102,9 +102,12 @@ img {
 
 /* HOME PAGE
 ------------------------------------*/
+
+
 .home {
-    background-color: #4c408b;
+    background-color: var(--neutral-2);
 }
+
 
 .home-wrapper {
     width: 100%;
@@ -150,9 +153,10 @@ img {
 
 /* ABOUT ME
 ------------------------------------*/
+
 .home main {
-    background-color: #4c408b;
-    color: white;
+    background-color: var(--neutral-2);
+    color: var(--neutral-9);
     width: 100%;
     max-width: none;
     padding: 45px 20px;
@@ -169,20 +173,27 @@ img {
     margin-bottom: 15px;
 }
 
+
 .about-me p {
-    color: white;
+    color: var(--neutral-9);
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 
+
+
 .about-me a {
-    color: white;
+    color: var(--color-primary);
 }
 
+
+
 .about-me a:hover {
-    color: #d3d4d6;
+    color: var(--neutral-7);
 }
+
+
 
 /* RESUME HEADER
 ------------------------------------*/
