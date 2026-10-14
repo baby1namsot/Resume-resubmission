@@ -33,19 +33,24 @@ html {
     box-sizing: inherit;
 }
 
+
 body {
     margin: 0;
-    background-color: #f6f6f6;
-    color: #222222;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--neutral-1);
+    color: var(--neutral-9);
+    font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.6;
 }
+
+
 h1,
 h2,
 h3 {
+    font-family: var(--font-heading);
     line-height: 1.2;
 }
+
 
 h1 {
     font-size: 48px;
@@ -58,12 +63,15 @@ h3 {
     font-size: 22px;
 }
 
+
 a {
-    color: #3c8453;
+    color: var(--color-primary);
 }
+
 a:hover {
-    color: #222222;
+    color: var(--neutral-9);
 }
+
 
 img {
     max-width: 100%;
@@ -78,14 +86,16 @@ img {
 
 /* BUTTONS
 ------------------------------------*/
+
 .btn {
     display: inline-block;
-    background-color: #3c8453;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--neutral-1);
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
 }
+
 
 
 
@@ -121,15 +131,18 @@ img {
     padding: 0 5px;
 }
 
+
 .home-header h1 {
-    color: white;
+    color: var(--neutral-9);
     font-size: 30px;
     line-height: 1.2;
     margin: 0;
 }
 
+
+
 .home-header h2 {
-    color: white;
+    color: var(--neutral-9);
     font-size: 22px;
     line-height: 1.2;
     margin: 0;
