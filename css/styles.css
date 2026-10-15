@@ -124,7 +124,7 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 580px;
+    min-height: 500px;
     padding: 10px 0;
 }
 
@@ -159,7 +159,7 @@ img {
     color: var(--neutral-9);
     width: 100%;
     max-width: none;
-    padding: 45px 20px;
+   padding: 30px 20px;
 }
 
 .about-me {
@@ -329,20 +329,22 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
 /* RESPONSIVE DESIGN - MOBILE FIRST */
 @media screen and (min-width: 601px) {
     .home-header {
-        min-height: 500px;
+       min-height: 580px;
     }
 
-    .home main {
-        padding: 45px 20px;
-    }
+   .home main {
+    padding: 45px 20px;
+}
 
     .resume-header h1 {
         font-size: 48px;
     }
 }
+
 
 
 
