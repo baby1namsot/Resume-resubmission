@@ -23,7 +23,13 @@
 
 /* GLOBAL STYLES 
 ------------------------------------*/
-html {
+
+.home main {
+    background-color: var(--neutral-2);
+    color: var(--neutral-9);
+    width: 100%;
+    max-width: none;
+    padding: 30px 20px;
     box-sizing: border-box;
 }
 
@@ -147,9 +153,10 @@ img {
 
 .home-header h2 {
     color: var(--neutral-9);
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.2;
     margin: 0;
+    overflow-wrap: anywhere;
 }
 
 /* ABOUT ME
@@ -162,10 +169,12 @@ img {
     max-width: none;
    padding: 30px 20px;
 }
-
 .about-me {
+    width: 100%;
     max-width: 700px;
+    min-width: 0;
     margin: 0 auto;
+    overflow-wrap: break-word;
 }
 
 .about-me h2 {
