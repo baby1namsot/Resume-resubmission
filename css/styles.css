@@ -329,35 +329,23 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* RESPONSIVE DESIGN
-------------------------------------*/
-@media screen and (max-width: 600px) {
+/* RESPONSIVE DESIGN - MOBILE FIRST */
+@media screen and (min-width: 601px) {
     .home-header {
         min-height: 500px;
     }
 
-    .home h1 {
-        font-size: 30px;
-    }
-
-    .home-header h2 {
-        font-size: 19px;
-    }
-
     .home main {
-        padding: 30px 20px;
+        padding: 45px 20px;
     }
 
     .resume-header h1 {
-        font-size: 36px;
-    }
-
-    .project-item {
-        float: none;
-        width: 100%;
-        margin: 0 0 25px;
+        font-size: 48px;
     }
 }
+
+
+
 
 /* RESUME PROJECT CARDS
 ------------------------------------*/
