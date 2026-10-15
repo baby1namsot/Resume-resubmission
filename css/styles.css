@@ -423,10 +423,31 @@ footer li img:hover {
 }
 
 /* FIX HOMEPAGE TEXT ON MOBILE */
-.home main,
+.home main {
+    padding: 30px 20px;
+}
+
 .about-me,
 .about-me p {
     max-width: 100%;
     min-width: 0;
     overflow-wrap: anywhere;
+}
+
+/* FIX MOBILE PAGE WIDTH */
+@media screen and (max-width: 600px) {
+    .home main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .about-me {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-me p {
+        width: 100%;
+        overflow-wrap: anywhere;
+    }
 }
