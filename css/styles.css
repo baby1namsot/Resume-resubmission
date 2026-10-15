@@ -120,7 +120,7 @@ img {
     oklch(45% 0.04 260 / 12%)
 ),
         
-        url("../images/bg-home-office-studio.jpg");
+       url("../images/my-banner.jpg");
 
     background-size: cover;
     background-position: center;
