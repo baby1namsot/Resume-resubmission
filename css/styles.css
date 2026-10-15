@@ -357,9 +357,8 @@ footer a:hover {
 }
 
 .resume .project-item {
-    float: none;
-    width: 100%;
-    margin: 0 0 30px;
+  
+  margin: 0;
     padding: 20px;
     border: 1px solid #d3d4d6;
     border-radius: 0;
