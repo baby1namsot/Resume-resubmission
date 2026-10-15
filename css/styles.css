@@ -255,12 +255,14 @@ img {
 ------------------------------------*/
 .projects {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 30px;
+    width: 100%;
 }
 
+
 .project-item {
-    width: 100%;
+   width: auto;
     margin: 0;
     padding: 20px;
     background-color: var(--neutral-1);
