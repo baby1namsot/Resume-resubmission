@@ -44,7 +44,7 @@ html {
 
 
 body {
-    overflow-x: hidden;
+  
     margin: 0;
     background-color: var(--neutral-1);
     color: var(--neutral-9);
