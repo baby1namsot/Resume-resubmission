@@ -200,44 +200,60 @@ img {
 }
 
 
+
 /* PROJECTS
 ------------------------------------*/
-.projects::after {
-    content: "";
-    display: table;
-    clear: both;
+:root {
+  --project-green: #3c8453;
+  --project-border: #d3d4d6;
+  --project-background: #ffffff;
+  --project-gap: 1.5rem;
+}
+
+.projects main.content-wrapper {
+  padding-block: 2.5rem;
+}
+
+/* Mobile: one column */
+.projects .projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--project-gap);
 }
 
 .project-item {
-    float: left;
-    position: relative;
-    width: calc(50% - 15px);
-    margin: 0 30px 30px 0;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-}
-
-.project-item:nth-child(2n) {
-    margin-right: 0;
-}
-
-.project-item:nth-child(2n + 1) {
-    clear: left;
+  min-width: 0;
+  padding: 1.25rem;
+  background-color: var(--project-background);
+  border: 1px solid var(--project-border);
+  border-radius: 0.5rem;
 }
 
 .project-item img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
-    margin-bottom: 15px;
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  margin-block-end: 1rem;
 }
 
 .project-item h3 {
-    color: #3c8453;
-    font-size: 1.375rem;
+  color: var(--project-green);
+  font-size: 1.375rem;
+  margin-block-start: 0;
 }
+
+.project-item p {
+  margin-block-end: 0;
+}
+
+/* Desktop: three columns */
+@media screen and (min-width: 48rem) {
+  .projects .projects {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 
 
 /* WORK EXPERIENCE
