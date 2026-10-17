@@ -389,3 +389,22 @@ footer li img:hover {
 }
 
 
+/* MOBILE PROJECTS FIX */
+@media screen and (max-width: 47.99rem) {
+  .projects main.content-wrapper {
+    width: 90%;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .projects .projects {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .projects .project-item {
+    min-width: 0;
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+
