@@ -311,6 +311,8 @@ footer a:hover {
 /* RESPONSIVE DESIGN
 ------------------------------------*/
 @media screen and (max-width: 37.5rem) {
+
+
   .home-header {
     min-block-size: 31.25rem;
   }
@@ -331,6 +333,7 @@ footer a:hover {
   .resume-header h1 {
     font-size: 2.25rem;
   }
+}
   
 
 /* RESUME PROJECT CARDS
@@ -354,6 +357,14 @@ footer a:hover {
   aspect-ratio: 3 / 2;
   object-fit: contain;
 }
+
+.project-image-placeholder {
+  inline-size: 100%;
+  aspect-ratio: 3 / 2;
+  background-color: #f0f0f0;
+  border: 1px dashed var(--project-border);
+}
+
 
 /* FOOTER SOCIAL MEDIA
 ------------------------------------*/
