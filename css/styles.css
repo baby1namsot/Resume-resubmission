@@ -210,13 +210,19 @@ img {
 }
 
 /* Mobile: one column */
+
 .projects .projects {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--project-gap);
 }
 
+
 .project-item {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  row-gap: 1rem;
   min-width: 0;
   padding: 1.25rem;
   background-color: var(--project-background);
@@ -224,22 +230,24 @@ img {
   border-radius: 0.5rem;
 }
 
+
+
 .project-item img {
   display: block;
   inline-size: 100%;
   aspect-ratio: 3 / 2;
   object-fit: contain;
-  margin-block-end: 1rem;
+  margin: 0;
 }
 
 .project-item h3 {
   color: var(--project-green);
   font-size: 1.375rem;
-  margin-block-start: 0;
+  margin: 0;
 }
 
 .project-item p {
-  margin-block-end: 0;
+  margin: 0;
 }
 
 /* Desktop: three columns */
@@ -323,12 +331,7 @@ footer a:hover {
   .resume-header h1 {
     font-size: 2.25rem;
   }
-  .project-item {
-    float: none;
-    width: 100%;
-    margin: 0 0 25px;
-  }
-}
+  
 
 /* RESUME PROJECT CARDS
 ------------------------------------*/
