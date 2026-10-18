@@ -399,3 +399,30 @@ footer li img:hover {
     overflow-wrap: anywhere;
   }
 }
+ @media screen and (max-width: 600px) {
+  .projects .content-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .projects .resume-section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .projects .projects {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .projects .project-item {
+    min-width: 0;
+  }
+
+  .projects footer p {
+    overflow-wrap: anywhere;
+    padding: 0 15px;
+  }
+}
