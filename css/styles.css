@@ -499,3 +499,121 @@ footer li img:hover {
     justify-content: space-between;
   }
 }
+
+/* CONTACT POPOVER
+------------------------------------*/
+
+.site-nav .contact-button {
+  anchor-name: --contact-button;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+#contact-popover {
+  position: fixed;
+  position-anchor: --contact-button;
+  position-area: bottom span-left;
+  position-try-fallbacks: flip-block, flip-inline;
+
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  inline-size: min(100vi, max(33vi, 26rem));
+  max-inline-size: none;
+
+  background-color: #ffffff;
+  color: #222222;
+  border: 2px solid #4c408b;
+  border-radius: 1rem 1rem 1rem 0;
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 20%);
+
+  container-type: inline-size;
+  resize: horizontal;
+  overflow: auto;
+  direction: rtl;
+}
+
+#contact-popover::backdrop {
+  background-color: rgb(0 0 0 / 60%);
+}
+
+.contact-card {
+  direction: ltr;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  position: relative;
+  padding-block-start: 2rem;
+}
+
+.contact-photo {
+  display: block;
+  inline-size: 100%;
+  block-size: 12rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+.contact-info {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-info h2 {
+  color: #4c408b;
+  font-size: 1.5rem;
+  margin-block: 0 0.5rem;
+}
+
+.contact-info p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.close-button {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  background-color: #3c8453;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.65rem;
+  cursor: pointer;
+}
+
+/* SMALL: Under 24rem */
+@container (width < 24rem) {
+  .contact-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-bio {
+    display: block;
+  }
+}
+
+/* MEDIUM: 24rem to 28rem */
+@container (24rem <= width < 28rem) {
+  .contact-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-bio {
+    display: none;
+  }
+}
+
+/* LARGE: 28rem and wider */
+@container (width >= 28rem) {
+  .contact-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-bio {
+    display: block;
+  }
+}
