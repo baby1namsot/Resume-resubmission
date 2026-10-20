@@ -483,13 +483,18 @@ footer li img:hover {
   text-decoration: underline;
 }
 
+
 .site-nav .contact-button {
+  anchor-name: --contact-button;
   display: inline-block;
-  background-color: var(--nav-button);
+  background-color: #3c8453;
   color: white;
   padding-block: 0.75rem;
   padding-inline: 1.25rem;
+  border: none;
   border-radius: 0.3125rem;
+  font: inherit;
+  cursor: pointer;
 }
 
 /* DESKTOP NAVIGATION */
