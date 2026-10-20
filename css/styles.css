@@ -507,14 +507,6 @@ footer li img:hover {
 
 /* CONTACT POPOVER
 ------------------------------------*/
-
-.site-nav .contact-button {
-  anchor-name: --contact-button;
-  border: none;
-  font: inherit;
-  cursor: pointer;
-}
-
 #contact-popover {
   position: fixed;
   position-anchor: --contact-button;
