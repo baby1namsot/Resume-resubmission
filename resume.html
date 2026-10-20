@@ -15,9 +15,15 @@
       <li><a href="resume.html" class="active" aria-current="page">Resume</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li>
-        <a class="contact-button" href="mailto:babynamsot123@gmail.com">
-          Contact
-        </a>
+        
+<button
+  type="button"
+  class="contact-button"
+  popovertarget="contact-popover"
+>
+  Contact
+</button>
+
       </li>
     </ul>
   </div>
@@ -117,14 +123,14 @@ PROJECT 1
             </p>
         </section>
 
+   
     </div>
 </section>
+-->
 
-
-
-      
-// WORK EXPERIENCE // -->
+<!-- // WORK EXPERIENCE // -->
 <section class="resume-section">
+
     <h2>Work Experience</h2>
 
     <!-- JOB 1 -->
@@ -210,5 +216,41 @@ PROJECT 1
         </li>
     </ul>
 </footer>
+
+<!-- CONTACT POPOVER -->
+<article id="contact-popover" popover>
+  <div class="contact-card">
+    <button
+      type="button"
+      class="close-button"
+      popovertarget="contact-popover"
+      popovertargetaction="hide"
+      aria-label="Close contact popover"
+    >
+      &times;
+    </button>
+
+    <img
+      src="images/my.image.png"
+      alt="Portrait of Baby"
+      class="contact-photo"
+    >
+
+    <div class="contact-info">
+      <h2>Baby Baby</h2>
+
+      <p class="contact-bio">
+        I am a Communication Design student
+        at North Island College. I enjoy
+        graphic design, typography,
+        and web design.
+      </p>
+
+      <p>Email: baby@example.com</p>
+      <p>Phone: 250-555-0100</p>
+    </div>
+  </div>
+</article>
+
 </body>
 </html>
