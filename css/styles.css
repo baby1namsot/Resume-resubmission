@@ -732,3 +732,25 @@ footer li img:hover {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* Assignment 3B - Clip Mask Animation */
+
+@keyframes clip-animation {
+  0%, 100% {
+    clip-path: inset(0);
+  }
+
+  50% {
+    clip-path: circle(50% at center);
+  }
+}
+
+.clip-shape {
+  animation: clip-animation 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clip-shape {
+    animation: none;
+  }
+}
