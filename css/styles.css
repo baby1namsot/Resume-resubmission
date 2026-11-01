@@ -671,3 +671,27 @@ footer li img:hover {
   }
 }
 
+
+/* Assignment 3B - Logotype Animation */
+
+@keyframes logo-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.site-nav .logo {
+  animation: logo-appear 1.2s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav .logo {
+    animation: none;
+  }
+}
