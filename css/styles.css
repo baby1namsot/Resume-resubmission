@@ -836,3 +836,20 @@ footer li img:hover {
     animation: none;
   }
 }
+
+
+/* Assignment 3B - Mobile Layout Fix */
+
+@media (max-width: 47.99rem) {
+  .animation-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .animation-card {
+    min-inline-size: 0;
+  }
+
+  .animation-card .animation-shape {
+    max-inline-size: 100%;
+  }
+}
