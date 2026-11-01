@@ -695,3 +695,40 @@ footer li img:hover {
     animation: none;
   }
 }
+
+
+/* Assignment 3B - Animation Showcase */
+
+.animation-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-block: 2rem;
+}
+
+.animation-card {
+  background-color: white;
+  border: 1px solid #d3d4d6;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.animation-card h2 {
+  color: #4c408b;
+  font-size: 1.25rem;
+}
+
+.animation-shape {
+  inline-size: 8rem;
+  block-size: 8rem;
+  margin-inline: auto;
+  margin-block: 2rem;
+  background-color: #3c8453;
+}
+
+@media screen and (min-width: 48rem) {
+  .animation-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
