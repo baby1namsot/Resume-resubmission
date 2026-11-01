@@ -621,3 +621,31 @@ footer li img:hover {
     display: block;
   }
 }
+
+/* Assignment 3B - Button Hover Animations */
+
+.contact-button,
+.close-button {
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-button:hover,
+.close-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 15%);
+}
+
+.contact-button:active,
+.close-button:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-button,
+  .close-button {
+    transition: none;
+  }
+}
