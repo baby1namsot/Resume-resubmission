@@ -754,3 +754,27 @@ footer li img:hover {
     animation: none;
   }
 }
+
+/* Assignment 3B - Filter Animation */
+
+@keyframes filter-animation {
+  0%, 100% {
+    filter: blur(0) brightness(1);
+    transform: scale(1);
+  }
+
+  50% {
+    filter: blur(3px) brightness(1.5);
+    transform: scale(1.1);
+  }
+}
+
+.filter-shape {
+  animation: filter-animation 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .filter-shape {
+    animation: none;
+  }
+}
