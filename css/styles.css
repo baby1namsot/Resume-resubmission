@@ -649,3 +649,25 @@ footer li img:hover {
     transition: none;
   }
 }
+
+
+/* Assignment 3B - Navigation Hover Animations */
+
+.site-nav a {
+  display: inline-block;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #d3d4d6;
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav a {
+    transition: none;
+  }
+}
+
