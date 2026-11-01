@@ -778,3 +778,61 @@ footer li img:hover {
     animation: none;
   }
 }
+
+/* Assignment 3B - Blend Mode Animation */
+
+.blend-container {
+  position: relative;
+  inline-size: 10rem;
+  block-size: 8rem;
+  margin: 2rem auto;
+  isolation: isolate;
+}
+
+.blend-circle {
+  position: absolute;
+  inline-size: 6rem;
+  block-size: 6rem;
+  border-radius: 50%;
+  inset-block-start: 1rem;
+  mix-blend-mode: multiply;
+}
+
+.blend-circle-one {
+  background-color: #3c8453;
+  inset-inline-start: 0;
+  animation: blend-move-one 3s ease-in-out infinite alternate;
+}
+
+.blend-circle-two {
+  background-color: #4c408b;
+  inset-inline-end: 0;
+  animation: blend-move-two 3s ease-in-out infinite alternate;
+}
+
+@keyframes blend-move-one {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(2rem);
+  }
+}
+
+@keyframes blend-move-two {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-2rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blend-circle-one,
+  .blend-circle-two {
+    animation: none;
+  }
+}
