@@ -217,7 +217,6 @@ img {
   gap: var(--project-gap);
 }
 
-
 .project-item {
   display: grid;
   grid-row: span 3;
@@ -229,8 +228,6 @@ img {
   border: 1px solid var(--project-border);
   border-radius: 0.5rem;
 }
-
-
 
 .project-item img {
   display: block;
@@ -311,8 +308,6 @@ footer a:hover {
 /* RESPONSIVE DESIGN
 ------------------------------------*/
 @media screen and (max-width: 37.5rem) {
-
-
   .home-header {
     min-block-size: 31.25rem;
   }
@@ -334,7 +329,6 @@ footer a:hover {
     font-size: 2.25rem;
   }
 }
-  
 
 /* RESUME PROJECT CARDS
 ------------------------------------*/
@@ -364,7 +358,6 @@ footer a:hover {
   background-color: #f0f0f0;
   border: 1px dashed var(--project-border);
 }
-
 
 /* FOOTER SOCIAL MEDIA
 ------------------------------------*/
@@ -413,7 +406,7 @@ footer li img:hover {
     overflow-wrap: anywhere;
   }
 }
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .projects .content-wrapper {
     width: 100%;
     max-width: 100%;
@@ -482,7 +475,6 @@ footer li img:hover {
 .site-nav .active {
   text-decoration: underline;
 }
-
 
 .site-nav .contact-button {
   anchor-name: --contact-button;
@@ -650,7 +642,6 @@ footer li img:hover {
   }
 }
 
-
 /* Assignment 3B - Navigation Hover Animations */
 
 .site-nav a {
@@ -670,7 +661,6 @@ footer li img:hover {
     transition: none;
   }
 }
-
 
 /* Assignment 3B - Logotype Animation */
 
@@ -696,7 +686,6 @@ footer li img:hover {
   }
 }
 
-
 /* Assignment 3B - Animation Showcase */
 
 .animation-grid {
@@ -712,6 +701,7 @@ footer li img:hover {
   border-radius: 0.5rem;
   padding: 1.5rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .animation-card h2 {
@@ -736,7 +726,8 @@ footer li img:hover {
 /* Assignment 3B - Clip Mask Animation */
 
 @keyframes clip-animation {
-  0%, 100% {
+  0%,
+  100% {
     clip-path: inset(0);
   }
 
@@ -758,7 +749,8 @@ footer li img:hover {
 /* Assignment 3B - Filter Animation */
 
 @keyframes filter-animation {
-  0%, 100% {
+  0%,
+  100% {
     filter: blur(0) brightness(1);
     transform: scale(1);
   }
@@ -837,7 +829,6 @@ footer li img:hover {
   }
 }
 
-
 /* Assignment 3B - Mobile Layout Fix */
 
 @media (max-width: 47.99rem) {
@@ -851,5 +842,32 @@ footer li img:hover {
 
   .animation-card .animation-shape {
     max-inline-size: 100%;
+  }
+}
+
+/* Project Button Hover Animation */
+.btn {
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: #4c408b;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 15%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+
+  .btn:hover,
+  .btn:focus-visible {
+    transform: none;
   }
 }
