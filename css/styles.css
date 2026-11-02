@@ -516,7 +516,7 @@ footer li img:hover {
   border-radius: 1rem 1rem 1rem 0;
   box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 20%);
 
-  container-type: inline-size;
+
   resize: horizontal;
   overflow: auto;
   direction: rtl;
@@ -572,32 +572,19 @@ footer li img:hover {
   cursor: pointer;
 }
 
-/* SMALL: Under 24rem */
-@container (width < 24rem) {
-  .contact-card {
-    grid-template-columns: minmax(0, 1fr);
-  }
 
-  .contact-bio {
-    display: block;
-  }
+/* CONTACT CARD RESPONSIVE LAYOUT */
+
+.contact-card {
+  grid-template-columns: minmax(0, 1fr);
 }
 
-/* MEDIUM: 24rem to 28rem */
-@container (24rem <= width < 28rem) {
-  .contact-card {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .contact-bio {
-    display: none;
-  }
+.contact-bio {
+  display: block;
 }
 
-/* LARGE: 28rem and wider */
-@container (min-width: 28rem) {
+@media screen and (min-width: 48rem) {
   .contact-card {
-    display: grid;
     grid-template-columns: 40% minmax(0, 1fr);
   }
 
@@ -606,11 +593,8 @@ footer li img:hover {
     height: 100%;
     object-fit: cover;
   }
-
-  .contact-bio {
-    display: block;
-  }
 }
+
 
 /* Assignment 3B - Button Hover Animations */
 
