@@ -477,7 +477,6 @@ footer li img:hover {
 }
 
 .site-nav .contact-button {
-  anchor-name: --contact-button;
   display: inline-block;
   background-color: #3c8453;
   color: white;
@@ -501,9 +500,8 @@ footer li img:hover {
 ------------------------------------*/
 #contact-popover {
   position: fixed;
-  position-anchor: --contact-button;
-  position-area: bottom span-left;
-  position-try-fallbacks: flip-block, flip-inline;
+  inset-block-start: 5rem;
+  inset-inline-end: 1rem;
 
   margin: 0;
   padding: 1rem;
