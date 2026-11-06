@@ -1,12 +1,13 @@
 
 :root {
-  --color-green: #3c8453;
-  --color-purple: #4c408b;
-  --color-beige: #bcaa96;
-  --color-dark: #222222;
-  --color-light: #f6f6f6;
-  --color-white: #ffffff;
-  --color-border: #d3d4d6;
+  
+--color-green: oklch(55% 0.12 150);
+--color-purple: oklch(40% 0.12 295);
+--color-beige: oklch(74% 0.035 70);
+--color-dark: oklch(25% 0 0);
+--color-light: oklch(96% 0 0);
+--color-white: oklch(100% 0 0);
+--color-border: oklch(86% 0 0);
 
   --font-body: Arial, Helvetica, sans-serif;
 
@@ -175,16 +176,18 @@ color: var(--color-white);
 
 /* RESUME HEADER
 ------------------------------------*/
+
 .resume {
-  background-color: #f6f6f6;
+  background-color: var(--color-light);
 }
 
 .resume-header {
-  background-color: #bcaa96;
+  background-color: var(--color-beige);
   text-align: center;
   padding-block: 2.8125rem;
   padding-inline: 1.25rem;
 }
+
 
 .resume-header h1 {
   font-size: 3rem;
@@ -204,11 +207,11 @@ color: var(--color-white);
 .resume-section {
   margin-block-end: 2.5rem;
   padding-block-end: 1.875rem;
-  border-block-end: 1px solid #d3d4d6;
+ border-block-end: 1px solid var(--color-border);
 }
 
 .resume-section h2 {
-  color: #3c8453;
+color: var(--color-green);
   font-size: 1.875rem;
 }
 
