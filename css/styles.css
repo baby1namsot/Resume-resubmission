@@ -866,10 +866,19 @@ footer li img:hover {
 
 #flower ellipse {
   opacity: 0;
-  transform-box: fill-box;
-  transform-origin: center;
   animation: petal-bloom 1s ease-out forwards;
 }
+
+@keyframes petal-bloom {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 
 #petal-1 {
   animation-delay: 0.5s !important;
@@ -895,6 +904,7 @@ footer li img:hover {
   animation-delay: 1.5s !important;
 }
 
+
 @keyframes petal-bloom {
   from {
     opacity: 0;
@@ -906,6 +916,7 @@ footer li img:hover {
     scale: 1;
   }
 }
+
 
 #flower-centre {
   opacity: 0;
