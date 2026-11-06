@@ -695,19 +695,23 @@ color: var(--color-border);
   margin-block: 2rem;
 }
 
+
 .animation-card {
-  background-color: white;
-  border: 1px solid #d3d4d6;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
   border-radius: 0.5rem;
   padding: 1.5rem;
   text-align: center;
   overflow: hidden;
 }
 
+
+
 .animation-card h2 {
- color: var(--color-purple);
+  color: var(--color-purple);
   font-size: 1.25rem;
 }
+
 
 .animation-shape {
   inline-size: 8rem;
@@ -791,13 +795,13 @@ background-color: var(--color-green);
 }
 
 .blend-circle-one {
-  background-color: #3c8453;
+  background-color: var(--color-green);
   inset-inline-start: 0;
   animation: blend-move-one 3s ease-in-out infinite alternate;
 }
 
 .blend-circle-two {
-  background-color: #4c408b;
+  background-color: var(--color-purple);
   inset-inline-end: 0;
   animation: blend-move-two 3s ease-in-out infinite alternate;
 }
