@@ -1,12 +1,24 @@
-/*
-COLOR PALETTE
 
-Dark green    #3c8453
-Sandy beige   #bcaa96
-Dark gray     #222222
-Light gray    #d3d4d6
-Off-white     #f6f6f6
-*/
+:root {
+  --color-green: #3c8453;
+  --color-purple: #4c408b;
+  --color-beige: #bcaa96;
+  --color-dark: #222222;
+  --color-light: #f6f6f6;
+  --color-white: #ffffff;
+  --color-border: #d3d4d6;
+
+  --font-body: Arial, Helvetica, sans-serif;
+
+  --project-green: var(--color-green);
+  --project-border: var(--color-border);
+  --project-background: var(--color-white);
+
+  --nav-background: var(--color-purple);
+  --nav-text: var(--color-white);
+  --nav-button: var(--color-green);
+}
+
 
 /* GLOBAL STYLES 
 ------------------------------------*/
@@ -216,6 +228,7 @@ color: var(--color-white);
   gap: 1.5rem;
 }
 
+
 .project-item {
   display: flex;
   flex-direction: column;
@@ -226,6 +239,12 @@ color: var(--color-white);
   border: 1px solid var(--project-border);
   border-radius: 0.5rem;
 }
+
+.projects .project-item .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
 
 .project-item img {
   display: block;
