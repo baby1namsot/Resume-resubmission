@@ -213,9 +213,8 @@ color: var(--color-white);
 .projects .projects {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: var(--project-gap);
+  gap: 1.5rem;
 }
-
 
 .project-item {
   display: flex;
@@ -942,4 +941,13 @@ footer li img:hover {
   max-inline-size: 15rem;
   block-size: auto;
   align-self: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects .project-item {
+  background-color: oklch(100% 0 0);
+  border: 1px solid oklch(86% 0 0);
+  border-radius: 0.5rem;
 }
