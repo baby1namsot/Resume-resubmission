@@ -495,7 +495,7 @@ footer li img:hover {
 
 .site-nav .contact-button {
   display: inline-block;
-  background-color: #3c8453;
+background-color: var(--color-green);
   color: white;
   padding-block: 0.75rem;
   padding-inline: 1.25rem;
@@ -527,10 +527,11 @@ footer li img:hover {
   inline-size: min(100vi, max(33vi, 26rem));
   max-inline-size: none;
 
-  background-color: #ffffff;
-  color: #222222;
-  border: 2px solid #4c408b;
-  border-radius: 1rem 1rem 1rem 0;
+  
+background-color: var(--color-white);
+color: var(--color-dark);
+border: 2px solid var(--color-purple);
+ border-radius: 1rem 1rem 1rem 0;
   box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 20%);
 
 
@@ -567,7 +568,7 @@ footer li img:hover {
 }
 
 .contact-info h2 {
-  color: #4c408b;
+color: var(--color-purple);
   font-size: 1.5rem;
   margin-block: 0 0.5rem;
 }
@@ -581,8 +582,8 @@ footer li img:hover {
   position: absolute;
   inset-block-start: 0;
   inset-inline-end: 0;
-  background-color: #3c8453;
-  color: white;
+background-color: var(--color-green);
+  color: var(--color-white);
   border: none;
   border-radius: 0.25rem;
   padding: 0.25rem 0.65rem;
@@ -651,7 +652,7 @@ footer li img:hover {
 }
 
 .site-nav a:hover {
-  color: #d3d4d6;
+color: var(--color-border);
   transform: translateY(-3px);
 }
 
@@ -704,7 +705,7 @@ footer li img:hover {
 }
 
 .animation-card h2 {
-  color: #4c408b;
+ color: var(--color-purple);
   font-size: 1.25rem;
 }
 
@@ -713,7 +714,7 @@ footer li img:hover {
   block-size: 8rem;
   margin-inline: auto;
   margin-block: 2rem;
-  background-color: #3c8453;
+background-color: var(--color-green);
 }
 
 @media screen and (min-width: 48rem) {
@@ -855,7 +856,7 @@ footer li img:hover {
 .btn:hover,
 .btn:focus-visible {
   background-color: #4c408b;
-  color: white;
+color: var(--color-white);
   transform: translateY(-3px);
   box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 15%);
 }
